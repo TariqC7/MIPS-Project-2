@@ -30,3 +30,10 @@
 			addi $t0, $t0, 0
 			addi $t1, $t1, 10
 			add $t4, $t4, $a0
+		
+		#Check the string for null character/loading next character into the t2 register
+		checkLengthLoop:
+			lb $t2, 0($a0)
+			beqz $t2, endLoop
+			beq $t2, $t1, endLoop
+			addi $a0, $a0, 1
