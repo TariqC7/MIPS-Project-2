@@ -77,3 +77,5 @@
 			slti $t6, $t5, 97
 			bne $t6, $zero, baseError
 			slti $t6, $t5, 121
+			bne $t6, $zero, Increment
+			bgt $t5, 120, baseError
