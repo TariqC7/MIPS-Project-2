@@ -54,3 +54,10 @@
 			la $a0, emptyInputError
 			syscall
 			j endProgram
+			
+		#This function returns an error if the string input is too long
+		tooLongError:
+			li $v0, 4
+			la $a0, tooLong
+			syscall
+			j endProgram
