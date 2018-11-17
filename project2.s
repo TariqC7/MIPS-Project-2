@@ -37,3 +37,5 @@
 			beqz $t2, endLoop
 			beq $t2, $t1, endLoop
 			addi $a0, $a0, 1
+			addi $t0, $t0, 1
+			j checkLengthLoop
