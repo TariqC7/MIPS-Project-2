@@ -85,3 +85,7 @@
 			la $a0, baseError
 			syscall
 			j endProgram
+			
+		Increment:
+			addi $a0, $a0, 1
+			j stringDetection
