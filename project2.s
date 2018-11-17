@@ -121,4 +121,10 @@
 		
 		aTox:
 			addi $s4, $s4, -87
+		
+		next:
+			beq $s0, $s3, thirdPower
+			beq $s0, $s2, secondPower
+			beq $s0, $s1, firstPower
+			beq $s0, $s5, zeroPower
 			
