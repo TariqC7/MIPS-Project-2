@@ -99,3 +99,9 @@
 			li $s2, 2
 			li $s1, 1
 			li $s5, 0
+			
+		stringConversion:
+			lb $s4, 0($a0)
+			beqz $s4, showSum
+			beq $s4, $t1, showSum
+			slti $t6, $s4, 58
