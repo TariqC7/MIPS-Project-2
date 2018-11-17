@@ -141,3 +141,7 @@
 			li $s6, 1156
 			mult $s4, $s6
 			mflo $s7
+			add $t7, $t7, $s7
+			addi $s0, $s0, -1
+			addi $a0, $a0, 1
+			j stringConversion
