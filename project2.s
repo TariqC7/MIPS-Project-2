@@ -145,3 +145,8 @@
 			addi $s0, $s0, -1
 			addi $a0, $a0, 1
 			j stringConversion
+		
+		firstPower:
+			li $s6, 34
+			mult $s4, $s6
+			mflo $s7
