@@ -18,3 +18,9 @@
 			li $t8, 32
 			lb $t9, 0($a0)
 			beq $t8, $t9, removeFirst
+			move $t9, $a0
+			j lengthCheck
+		
+		removeFirst:
+			addi $a0, $a0, 1
+			j removeSpaces
