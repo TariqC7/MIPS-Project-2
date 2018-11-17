@@ -109,3 +109,4 @@
 			slti $t6, $s4, 89
 			bne $t6, $zero, AtoX
 			slti $t6, $s4, 121
+			bne $t6, $zero, aTox
