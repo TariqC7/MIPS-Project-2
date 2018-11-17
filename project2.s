@@ -118,4 +118,7 @@
 		AtoX:
 			addi $s4, $s4, -55
 			j next
+		
+		aTox:
+			addi $s4, $s4, -87
 			
