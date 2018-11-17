@@ -46,3 +46,4 @@
 			slti $t3, $t0, 5
 			beqz $t3, tooLong
 			move $a0, $t4
+			j stringDetection
