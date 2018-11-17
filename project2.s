@@ -105,3 +105,5 @@
 			beqz $s4, showSum
 			beq $s4, $t1, showSum
 			slti $t6, $s4, 58
+			bne $t6, $zero, zeroToNine
+			slti $t6, $s4, 89
