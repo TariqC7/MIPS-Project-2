@@ -137,3 +137,7 @@
 			addi $a0, $a0, 1
 			j stringConversion
 			
+		secondPower:
+			li $s6, 1156
+			mult $s4, $s6
+			mflo $s7
