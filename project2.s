@@ -24,3 +24,9 @@
 		removeFirst:
 			addi $a0, $a0, 1
 			j removeSpaces
+			
+		#Count characters in the string input
+		lengthCheck:
+			addi $t0, $t0, 0
+			addi $t1, $t1, 10
+			add $t4, $t4, $a0
