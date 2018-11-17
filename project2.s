@@ -47,3 +47,10 @@
 			beqz $t3, tooLong
 			move $a0, $t4
 			j stringDetection
+			
+		#This function returns an error if input is null
+		emptyInput:
+			li $v0, 4
+			la $a0, emptyInputError
+			syscall
+			j endProgram
