@@ -39,3 +39,10 @@
 			addi $a0, $a0, 1
 			addi $t0, $t0, 1
 			j checkLengthLoop
+			
+		#This function basically ends the loop if any input matches the errors 
+		endLoop:
+			beqz $t0, emptyInput
+			slti $t3, $t0, 5
+			beqz $t3, tooLong
+			move $a0, $t4
