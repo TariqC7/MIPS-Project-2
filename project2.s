@@ -127,4 +127,9 @@
 			beq $s0, $s2, secondPower
 			beq $s0, $s1, firstPower
 			beq $s0, $s5, zeroPower
+		
+		thirdPower:
+			li $s6, 39304
+			mult $s4, $s6
+			mflo $s7
 			
